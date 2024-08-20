@@ -14,8 +14,9 @@
     </head>
     <body>
         <h2>Sign In</h2>
+        
         <form action="{% url 'signin' %}" method="post">
-            {% csrf_token %} 
+            {% csrf_token %}
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -28,6 +29,15 @@
                 <button type="submit">Sign In</button>
             </div>
         </form>
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
         <p>Don't have an account? <a href="{% url 'register' %}">Register here</a>.</p>
+    
+        
     </body>
 </html>
