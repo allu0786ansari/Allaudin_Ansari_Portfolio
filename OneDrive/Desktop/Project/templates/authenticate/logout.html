@@ -7,18 +7,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Authentication</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h3> Welcome to Personalized Financial Assistant </h3>
-
-        <button type="submit"> <a href="/register">Register </a></button>
-        <button type="submit"> <a href="/signin">Signin </a></button>
-        <button type="submit"> <a href="/logout">Logout </a></button>
-
-        <script src="" async defer></script>
+        <h2>You have been signed out.</h2>
+        <p><a href="{% url 'signin' %}">Sign in again</a> or go back to <a href="{% url 'index' %}">Home</a>.</p>
     </body>
 </html>
