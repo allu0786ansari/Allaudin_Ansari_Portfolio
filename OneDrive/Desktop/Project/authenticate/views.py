@@ -4,7 +4,7 @@ from django.contrib import messages  # Import messages framework
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponse
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 def index(request):
     return render(request, "authenticate/index.html")
@@ -75,5 +75,7 @@ def signin(request):
 
     return render(request, "authenticate/signin.html")
 
-def logout(request):
-    return render(request, "authenticate/logout.html")
+def logout_view(request):
+    logout(request)
+    messages.success(request, "Logged  out successfully!")
+    return redirect('index')
