@@ -9,10 +9,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 25);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Web Developer", "ML Engineer", "AI Engineer" ];
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -55,9 +55,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <span className="tagline">Hi, There </span>
+                <h2>{`I'm Allaudin Ansari,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "ML Engineer", "AI Engineer" ]'><span className="wrap">{text}</span></span></h2>
+                  <p>A passionate Web Developer and ML Engineer from SRM Institute of Science and Technology, pursuing a B.tech in Computer Science and Engineering. I specialized in building annovative web applications using cutting-edge framework and tools, blending AI-driven solutions with seamless user experience.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

@@ -35,7 +35,8 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Proficient in full-stack development with Django as the backend and React.js as the frontend, building scalable and dynamic web applications. Skilled in creating RESTful APIs with Django and integrating them with React for seamless user experiences.<br></br> Experienced in machine learning techniques, including data preprocessing, exploratory data analysis, model training, and AI integration using TensorFlow and Keras. Possesses a strong understanding of ML algorithms, deep learning techniques, and NLP, allowing me to dive deep into the domain of machine learning.<br></br> Adept at using version control (Git) and managing databases like MySQL. Familiar with cloud deployment and containerization for efficient application management.</p>
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
@@ -43,15 +44,19 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>Machine learning</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>AI Engineering</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Data Science</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Gen AI</h5>
                             </div>
                         </Carousel>
                     </div>
