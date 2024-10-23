@@ -1,22 +1,20 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -28,42 +26,47 @@ export const Skills = () => {
     }
   };
 
+  const skills = [
+    { name: "Web Development", value: 70 },
+    { name: "Machine Learning", value: 60 },
+    { name: "AI Engineering", value: 50 },
+    { name: "Data Science", value: 35 },
+    { name: "Gen AI", value: 40 },
+  ];
+
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Proficient in full-stack development with Django as the backend and React.js as the frontend, building scalable and dynamic web applications. Skilled in creating RESTful APIs with Django and integrating them with React for seamless user experiences.<br></br> Experienced in machine learning techniques, including data preprocessing, exploratory data analysis, model training, and AI integration using TensorFlow and Keras. Possesses a strong understanding of ML algorithms, deep learning techniques, and NLP, allowing me to dive deep into the domain of machine learning.<br></br> Adept at using version control (Git) and managing databases like MySQL. Familiar with cloud deployment and containerization for efficient application management.</p>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Skills</h2>
+              <p>Proficient in full-stack development with Django as the backend and React.js as the frontend, building scalable and dynamic web applications. Skilled in creating RESTful APIs with Django and integrating them with React for seamless user experiences.<br></br> Experienced in machine learning techniques, including data preprocessing, exploratory data analysis, model training, and AI integration using TensorFlow and Keras. Possesses a strong understanding of ML algorithms, deep learning techniques, and NLP, allowing me to dive deep into the domain of machine learning.<br></br> Adept at using version control (Git) and managing databases like MySQL. Familiar with cloud deployment and containerization for efficient application management.</p>
 
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Machine learning</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>AI Engineering</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Data Science</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Gen AI</h5>
-                            </div>
-                        </Carousel>
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                {skills.map((skill, index) => (
+                  <div className="item" key={index} style={{ width: '120px', margin: '0 auto' }}>
+                    <div style={{ width: '100px', height: '100px', margin: '0 auto' }}>
+                      <CircularProgressbar
+                        value={skill.value}
+                        text={`${skill.value}%`}
+                        styles={buildStyles({
+                          pathColor: `red(62, 152, 199, ${skill.value / 100})`,
+                          textColor: '#fff',
+                          trailColor: '#d6d6d6',
+                          backgroundColor: '#3e98c7',
+                        })}
+                      />
                     </div>
-                </div>
+                    <h5 style={{ textAlign: 'center', marginTop: '10px' }}>{skill.name}</h5>
+                  </div>
+                ))}
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  )
-}
+  );
+};
