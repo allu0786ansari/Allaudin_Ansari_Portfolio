@@ -14,16 +14,22 @@ export const Projects = () => {
       title: "Personalized Financial Assistant",
       description: "This is a ongoing project where user can track their financial data and gain a ai-assited financial advice on how they can manage their financial transactions to achieve a balanced lifestyle",
       imgUrl: finance_tracker,
+      githubUrl: "#",
+      demoUrl: "#",
     },
     {
       title: "Phoenix: E-LMS",
       description: "This is a ongoing project related to the learning management system where one can learn and interact with the online learning resources like coursera platfrom. This project will includes the features recommdation system and other ai assited dashboard to help the learners to improve thier learning habits....",
       imgUrl: projImg2,
+      githubUrl: "#",
+      demoUrl: "#",
     },
     {
       title: "PDF-Data Extraction and Masking",
       description: "A web-based platform where user can upload their pdf and this application will extract the data and mask the sensitive information. This is simple application having the features of dealing with multiples files, multilingual datasets and data extraction from images. I have used re expressions, spacy, and ai-ml techniques to extract the data from pdf and images.",
       imgUrl: projImg1,  // Placeholder or appropriate image
+      githubUrl: "#",
+      demoUrl: "#",
     },
     
   ];
@@ -33,16 +39,22 @@ export const Projects = () => {
       title: "Image Classification: Mini Project",
       description: "",
       imgUrl: finance_tracker,
+      githubUrl: "#",
+      demoUrl: "#",
     },
     {
       title: "Youtube-videos transcript Generation: Mini Project",
       description: "",
       imgUrl: projImg2,
+      githubUrl: "#",
+      demoUrl: "#",
     },
     {
       title: "PDF-Data Extraction and Masking",
       description: "",
       imgUrl: projImg1,  // Placeholder or appropriate image
+      githubUrl: "#",
+      demoUrl: "#",
     },
     
   ];

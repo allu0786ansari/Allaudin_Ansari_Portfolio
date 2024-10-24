@@ -466,6 +466,79 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/************ Academics.css ****************/
+.certifications {
+  padding: 60px 0;
+  background-color: #191919;
+  color: #ffffff;
+}
+
+.certifications-header h2 {
+  color: #e83e8c;
+  font-size: 2.5rem;
+}
+
+.certifications-header p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cert-imgbx {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cert-details {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.cert-details h4 {
+  color: #e83e8c;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cert-details p {
+  color: #d4d4d4;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.cert-btn {
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.cert-btn:hover {
+  background-color: #e83e8c;
+  border-color: #e83e8c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .certifications-header h2 {
+    font-size: 2rem;
+  }
+
+  .certifications-header p {
+    font-size: 1rem;
+  }
+}
+
+
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
