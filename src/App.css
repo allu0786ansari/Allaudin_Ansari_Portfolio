@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
-  color: #fff !important;
+  color: #2f1ace !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -92,17 +92,17 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #230303;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #4712d6 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 22px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -127,7 +127,7 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(11, 170, 238, 0.303);
 }
 .social-icon a::before {
     content: "";
@@ -152,8 +152,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #171ac4;
+  border: 1px solid #0d7383;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -243,14 +243,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
+  font-size: 35px;
+  margin-bottom: 0px;
   display: inline-block;
 }
-.banner h1 {
-  font-size: 65px;
+.banner h2 {
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -306,7 +304,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #210303;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
