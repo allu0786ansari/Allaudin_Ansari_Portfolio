@@ -342,9 +342,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 0 0 50px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -467,37 +466,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Academics.css ****************/
-.certifications {
-  padding: 60px 0;
-  background-color: #191919;
-  color: #ffffff;
+/* Use container and background styles from skills */
+.Academics {
+  padding: 50px 0 50px 0; /* Add some padding on top for spacing */
+  position: relative;
+  background-color: transparent; /* Similar to the background in skills.css */
+  border-radius: 50px; /* Keep rounded container like skill section */
+  text-align: center;
 }
 
-.certifications-header h2 {
-  color: #e83e8c;
-  font-size: 2.5rem;
+/* Maintain the header styles for Academics */
+.Academics-header h2 {
+  color: #2a19c4;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .certifications-header p {
-  color: #ffffff;
+  color: #1e24d8; /* Consistent with the paragraph color in skills */
   font-size: 1.2rem;
+  letter-spacing: 0.8px; /* Add spacing similar to skills */
+  line-height: 1.5em;
   margin-bottom: 30px;
 }
 
+/* Keep certificate box style similar to Academics but with some adjustments */
 .cert-imgbx {
-  border: 1px solid #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #2a2a2a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #2a2a2a; /* Keep dark background from Academics */
+  padding: 30px 20px;
+  border-radius: 20px; /* Adjust the border-radius for a smoother look */
+  border: 1px solid #4816d0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep the shadow */
+  margin-top: 30px; /* Add some top margin to give space between boxes */
 }
 
+/* Ensure the image remains consistent */
 .cert-img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 5px;
 }
 
+/* Center and add consistent padding to details */
 .cert-details {
   text-align: center;
   padding: 20px 10px;
@@ -505,38 +515,62 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .cert-details h4 {
   color: #e83e8c;
-  font-size: 1.5rem;
+  font-size: 1.8rem; /* Slightly increased size to match the heading in skills */
   margin-bottom: 10px;
 }
 
 .cert-details p {
   color: #d4d4d4;
-  font-size: 1rem;
+  font-size: 1.2rem; /* Increase font-size for readability */
   margin-bottom: 20px;
+  line-height: 1.6em; /* Increase line height for readability */
 }
 
+/* Keep button consistent */
 .cert-btn {
   font-size: 1rem;
-  padding: 8px 15px;
+  padding: 10px 25px; /* Increase padding for a more button-like appearance */
   border-radius: 25px;
   color: #fff;
+  background-color: transparent; /* Transparent background like in Academics */
+  border: 1px solid #fff; /* Keep white border */
+  transition: all 0.3s ease-in-out;
 }
 
 .cert-btn:hover {
-  background-color: #e83e8c;
+  background-color: #e83e8c; /* Match hover color with the heading */
   border-color: #e83e8c;
   color: #fff;
 }
 
+/* Use similar responsive styles as the skills section */
 @media (max-width: 768px) {
   .certifications-header h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .certifications-header p {
     font-size: 1rem;
   }
+
+  .cert-details h4 {
+    font-size: 1.5rem;
+  }
+
+  .cert-details p {
+    font-size: 1rem;
+  }
 }
+
+/* Maintain background image position like in skills */
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
 
 
 /************ Contact Css ************/
