@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const Web_Development = [
     {
       title: "Personalized Financial Assistant",
       description: "This is a ongoing project where user can track their financial data and gain a ai-assited financial advice on how they can manage their financial transactions to achieve a balanced lifestyle",
@@ -23,6 +23,25 @@ export const Projects = () => {
     {
       title: "PDF-Data Extraction and Masking",
       description: "A web-based platform where user can upload their pdf and this application will extract the data and mask the sensitive information. This is simple application having the features of dealing with multiples files, multilingual datasets and data extraction from images. I have used re expressions, spacy, and ai-ml techniques to extract the data from pdf and images.",
+      imgUrl: projImg1,  // Placeholder or appropriate image
+    },
+    
+  ];
+
+  const AI_ML = [
+    {
+      title: "Image Classification: Mini Project",
+      description: "",
+      imgUrl: finance_tracker,
+    },
+    {
+      title: "Youtube-videos transcript Generation: Mini Project",
+      description: "",
+      imgUrl: projImg2,
+    },
+    {
+      title: "PDF-Data Extraction and Masking",
+      description: "",
       imgUrl: projImg1,  // Placeholder or appropriate image
     },
     
@@ -54,7 +73,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          Web_Development.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -68,7 +87,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          AI_ML.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
