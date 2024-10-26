@@ -304,12 +304,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #210303;
+  background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.883)), /* Dark overlay */
+      url(./assets/img/skills_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
+
+
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
