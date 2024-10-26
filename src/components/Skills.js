@@ -51,7 +51,7 @@ export const Skills = () => {
                         value={skill.value}
                         text={`${skill.value}%`}
                         styles={buildStyles({
-                          pathColor: `red(62, 152, 199, ${skill.value / 100})`,
+                          pathColor: `#171ac4`,
                           textColor: '#fff',
                           trailColor: '#d6d6d6',
                           backgroundColor: '#3e98c7',
