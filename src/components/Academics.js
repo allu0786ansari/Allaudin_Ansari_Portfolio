@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { AcademicsCard } from "./AcademicsCard";
-import projImg1 from "../assets/img/project-img1.png";
+// import DL from "../assets/img/DL.pdf";
 import projImg2 from "../assets/img/project-img2.png";
 import finance_tracker from "../assets/img/finance_tracker.png";
 
@@ -10,17 +10,17 @@ export const Academics = () => {
     {
       title: "Getting Started With Deep Learning",
       description: "Achieved elite rank in Java certification through NPTEL, showcasing advanced proficiency in Java programming and comprehensive understanding of key concepts.",
-      imgUrl: projImg1,
-      certUrl: "#"  // Use actual certificate URL
+      imgUrl: finance_tracker,
+      certUrl: "DL"  // Use actual certificate URL
     },
     {
-      title: "Python Programming - IIT Kharagpur",
+      title: "AWS Educate Machine Learning Foundations",
       description: "Completed Python certification from IIT Kharagpur through NPTEL, demonstrating expertise in Python programming.",
       imgUrl: projImg2,
       certUrl: "#"
     },
     {
-      title: "Programming in JavaScript",
+      title: "AWS Educate Introductin To Cloud 101",
       description: "Successfully completed JavaScript certification on Coursera, emphasizing practical proficiency and solid understanding of key concepts.",
       imgUrl: finance_tracker,
       certUrl: "#"
