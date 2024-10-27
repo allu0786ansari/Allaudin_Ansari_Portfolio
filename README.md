@@ -70,6 +70,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-
-yarn add react-bootstrap-icons animate.css react-on-screen react-mailchimp-subscribe react-router-hash-link react-router-dom react-multi-carousel
+Packages installed in this directory
 yarn add react-bootstrap bootstrap
+yarn add react-responsive-carousel

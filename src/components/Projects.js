@@ -3,6 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import finance_tracker from "../assets/img/finance_tracker.png";
+import lms from "../assets/img/lms.png";
+import objdetection from "../assets/img/objdetection.png";
+import dataextraction from "../assets/img/dataextraction.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -20,14 +23,14 @@ export const Projects = () => {
     {
       title: "Phoenix: E-LMS",
       description: "This is a ongoing project related to the learning management system where one can learn and interact with the online learning resources like coursera platfrom. This project will includes the features recommdation system and other ai assited dashboard to help the learners to improve thier learning habits....",
-      imgUrl: projImg2,
+      imgUrl: lms,
       githubUrl: "#",
       demoUrl: "#",
     },
     {
       title: "PDF-Data Extraction and Masking",
       description: "A web-based platform where user can upload their pdf and this application will extract the data and mask the sensitive information. This is simple application having the features of dealing with multiples files, multilingual datasets and data extraction from images. I have used re expressions, spacy, and ai-ml techniques to extract the data from pdf and images.",
-      imgUrl: projImg1,  // Placeholder or appropriate image
+      imgUrl: dataextraction,  // Placeholder or appropriate image
       githubUrl: "#",
       demoUrl: "#",
     },
@@ -38,7 +41,7 @@ export const Projects = () => {
     {
       title: "Image Classification: Mini Project",
       description: "",
-      imgUrl: finance_tracker,
+      imgUrl: objdetection,
       githubUrl: "#",
       demoUrl: "#",
     },

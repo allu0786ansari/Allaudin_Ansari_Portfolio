@@ -8,7 +8,7 @@ export const Academics = () => {
 
   const Academics = [
     {
-      title: "Programming in JAVA",
+      title: "Getting Started With Deep Learning",
       description: "Achieved elite rank in Java certification through NPTEL, showcasing advanced proficiency in Java programming and comprehensive understanding of key concepts.",
       imgUrl: projImg1,
       certUrl: "#"  // Use actual certificate URL
