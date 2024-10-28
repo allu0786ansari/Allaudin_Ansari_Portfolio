@@ -477,7 +477,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .Academics {
   padding: 50px 0 50px 0; /* Add some padding on top for spacing */
   position: relative;
-  background-color: transparent; /* Similar to the background in skills.css */
+  background-image: url('./assets/img/banner-bg.png');
   border-radius: 50px; /* Keep rounded container like skill section */
   text-align: center;
 }
