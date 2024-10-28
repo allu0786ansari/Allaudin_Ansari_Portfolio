@@ -234,7 +234,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  
+  background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.883)), /* Dark overlay */
+        url(./assets/img/skills_bg.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -305,8 +308,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-bx {
   background-image: 
-      linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.883)), /* Dark overlay */
-      url(./assets/img/skills_bg.jpg);
+      linear-gradient(rgba(0, 0, 0, 0.821), rgba(0, 0, 0, 0)), /* Dark overlay */
+      url(./assets/img/banner-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -368,7 +371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgba(157, 72, 72, 0.1);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -425,7 +428,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -580,7 +582,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.883)), /* Dark overlay */
+      url(./assets/img/skills_bg.jpg);
   padding: 60px 0 200px 0;
 }
 .contact img {
