@@ -1,28 +1,28 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { AcademicsCard } from "./AcademicsCard";
-// import DL from "../assets/img/DL.pdf";
-import projImg2 from "../assets/img/project-img2.png";
-import finance_tracker from "../assets/img/finance_tracker.png";
+import DL from "../assets/img/DL.jpg";
+import AI_intro from "../assets/img/AI_intro.jpg";
+import Geodata from "../assets/img/Geodata.jpg";
 
 export const Academics = () => {
 
   const Academics = [
     {
       title: "Getting Started With Deep Learning",
-      description: "Achieved elite rank in Java certification through NPTEL, showcasing advanced proficiency in Java programming and comprehensive understanding of key concepts.",
-      imgUrl: finance_tracker,
-      certUrl: "DL"  // Use actual certificate URL
+      description: "",
+      imgUrl: DL,
+      certUrl: "https://learn.nvidia.com/certificates?id=BVznGHjkTYKSG038dqvLeQ/courses/course?course_id=coursev1:DLI+S-FX-01+V1"  // Use actual certificate URL
     },
     {
-      title: "AWS Educate Machine Learning Foundations",
-      description: "Completed Python certification from IIT Kharagpur through NPTEL, demonstrating expertise in Python programming.",
-      imgUrl: projImg2,
+      title: "Introduction To Artificial Intelligence",
+      description: "",
+      imgUrl: AI_intro,
       certUrl: "#"
     },
     {
-      title: "AWS Educate Introductin To Cloud 101",
-      description: "Successfully completed JavaScript certification on Coursera, emphasizing practical proficiency and solid understanding of key concepts.",
-      imgUrl: finance_tracker,
+      title: "Geodata Processing Using Python",
+      description: "",
+      imgUrl: Geodata,
       certUrl: "#"
     }
   ];
