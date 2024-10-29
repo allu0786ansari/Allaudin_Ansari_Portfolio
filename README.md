@@ -1,8 +1,8 @@
 #Packages installed\
 yarn add react-bootstrap bootstrap\
-yarn add react-responsive-carousel\
+yarn add react-responsive-carousel
 
-In the project directory, you can run:\
+In the project directory, you can run:
 
 
 ### `yarn start`
