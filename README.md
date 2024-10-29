@@ -1,7 +1,7 @@
-
-
-
 In the project directory, you can run:
+Packages installed in this directory
+yarn add react-bootstrap bootstrap
+yarn add react-responsive-carousel
 
 ### `yarn start`
 
