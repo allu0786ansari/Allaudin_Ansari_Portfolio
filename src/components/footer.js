@@ -22,7 +22,7 @@ export const Footer = () => {
               <a href="https://github.com/allu0786ansari"><img src={github_icon} alt="GitHub" /></a>
               <a href="https://x.com/Allu786ansari"><img src={twitter_icon} alt="Twitter" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Created By: Allaudin Ansari</p>
           </Col>
         </Row>
       </Container>
